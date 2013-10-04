@@ -121,11 +121,16 @@ vagrant/virtualbox
     `arangs13> samtools`
     `arangs13> exit`
 
+* Capture and use the vagrant ssh-config as a standard ssh configuration file (for use by ssh, and perl, python, ruby, etc. ssh wrappers)
+    `local> vagrant ssh-config > arangs13.conf`
+    `local> ssh -F arangs13.conf arangs13`
+    `arangs13> exit`
+
 * check the status of the arangs13 box
 
     `local> vagrant status`
 
-*  suspend and bring back up the arangs13 box (does not destroy the image, so puppet does not need to run again, and any files stored on the virtual filesystem are preserved), then bring it back up
+*  suspend the arangs13 box (does not destroy the image, so puppet does not need to run again, and any files stored on the virtual filesystem are preserved), then bring it back up
 
     `local> vagrant suspend`
     `local> vagrant up`
