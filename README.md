@@ -107,7 +107,7 @@ vagrant/virtualbox
 * install vagrant: http://www.vagrantup.com/
 * add the centos5.8 box to your vagrant boxes: 
 
-    `local> vagrant box add centos58 http://tag1consulting.com/files/centos-5.8-x86-64-minimal.box`
+    `local> vagrant box add fedora http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vbox4210.box`
 
 * bring up the arangs13 box: make sure you are connected to the internet
 
@@ -119,6 +119,7 @@ vagrant/virtualbox
     `arangs13> ls`
     `arangs13> bwa`
     `arangs13> samtools`
+    `arangs13> perldoc Bio::Db::Sam`
     `arangs13> exit`
 
 * Capture and use the vagrant ssh-config as a standard ssh configuration file (for use by ssh, and perl, python, ruby, etc. ssh wrappers)

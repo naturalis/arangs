@@ -10,7 +10,7 @@ Vagrant::Config.run do |config|
        "--memory",
        "1024"
     ]
-    arangs13_config.vm.box = "centos58"
+    arangs13_config.vm.box = "fedora"
     arangs13_config.vm.host_name = "arrangs13"
     arangs13_config.vm.provision :puppet, :module_path => "modules"
 
