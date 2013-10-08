@@ -116,10 +116,15 @@ vagrant/virtualbox
 * ssh to arangs13, list out the contents, check the version of bwa and samtools, then exit back to your box
 
     `local> vagrant ssh`
+
     `arangs13> ls`
+
     `arangs13> bwa`
+
     `arangs13> samtools`
+
     `arangs13> perldoc Bio::Db::Sam`
+
     `arangs13> exit`
 
 * Capture and use the vagrant ssh-config as a standard ssh configuration file (for use by ssh, and perl, python, ruby, etc. ssh wrappers)
