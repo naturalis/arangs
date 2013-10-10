@@ -12,7 +12,7 @@ Vagrant::Config.run do |config|
     ]
     arangs13_config.vm.box = "fedora"
     arangs13_config.vm.host_name = "arrangs13"
-    arangs13_config.vm.provision :puppet, :module_path => "modules"
+    arangs13_config.vm.provision :puppet
 
     ['data', 'reference'].each do |dir|
       arangs13_config.vm.share_folder dir.to_s, "/home/vagrant/#{ dir }", "#{Dir.pwd}/#{ dir }"
