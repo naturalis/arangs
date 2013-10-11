@@ -1,5 +1,5 @@
 Vagrant::Config.run do |config|
-
+  config.ssh.forward_x11 = true
   config.vm.define :arangs13 do |arangs13_config|
 
     arangs13_config.vm.customize [
