@@ -4,11 +4,14 @@ Next Generation Sequencing Workflows
 Automated and Reproducible Analysis of Next Generation Sequencing
 Source code, data, documentation and reference materials
 
+Data
+----
+* Data for exercises: https://drive.google.com/folderview?id=0B_8UW3JvZsgcNHo2V3JuY19sMlE&usp=sharing
+
 Reference materials
 -------------------
 * "A Quick Guide to Organizing Computational Biology Projects" http://dx.doi.org/10.1371/journal.pcbi.1000424
 * "A quick guide for developing effective bioinformatics programming skills." http://dx.doi.org/10.1371/journal.pcbi.1000589
-* "Managing Projects with GNU Make." http://oreilly.com/catalog/make3/book/index.csp
 * "Advanced Bash-Scripting Guide" http://tldp.org/LDP/abs/html/
 * NGS glossary https://docs.google.com/spreadsheet/ccc?key=0Av8UW3JvZsgcdE9wZW1sYzlCQWFwNjBXLWMtQzZLN3c#gid=0
 * NGS platforms https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_CxCpd4
@@ -18,7 +21,6 @@ Reference materials
 Syntax Format Descriptions
 --------------------------
 * SAM/BAM http://samtools.sourceforge.net/SAM1.pdf
-* Binary sequence trace formats. http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=show&f=formats&m=doc&s=format#ztr
 * VCF Format http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-40
 * FASTQ http://maq.sourceforge.net/fastq.shtml
 * Sequence file formats http://bioinf.comav.upv.es/courses/sequence_analysis/sequence_file_formats.html
@@ -37,15 +39,8 @@ Executables
 --------
 * samtools http://samtools.sourceforge.net/
 * BWA http://bio-bwa.sourceforge.net/
-* sff2fastq https://github.com/indraniel/sff2fastq
 * fastqc http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 * picard http://picard.sourceforge.net/
-* bowtie http://bowtie-bio.sourceforge.net/
-* maq http://maq.sourceforge.net/
-* velvet http://www.ebi.ac.uk/~zerbino/velvet/
-* prinseq http://prinseq.sourceforge.net/
-* bfast http://bfast.sourceforge.net/
-* mira http://mira-assembler.sourceforge.net/
 * vcftools http://vcftools.sourceforge.net/
 
 Toolkits
@@ -57,7 +52,6 @@ Toolkits
 * FAST-X toolkit http://hannonlab.cshl.edu/fastx_toolkit/
 * GATK http://www.broadinstitute.org/gatk/
 * BioLib https://github.com/biolib/biolib
-* SOAP http://soap.genomics.org.cn/index.html
 
 Integrated applications
 -----------------------
