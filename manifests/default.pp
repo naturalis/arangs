@@ -27,6 +27,8 @@ package {
     ensure => true;
   "perl-Inline":
     ensure => true;
+  "zlib-devel":
+    ensure => true;
 }
 
 file {
@@ -38,7 +40,13 @@ file {
     path => "/usr/local/bin/fastqc",
     ensure => link,
     target => "/usr/local/lib/FastQC/fastqc",
-    require => File['executable_fastqc'];    
+    require => File['executable_fastqc'];
+  "kseq.h":
+    path => "/usr/include/kseq.h",
+    source => "/home/vagrant/lib/kseq.h";
+  "Fasterq.pm":
+    path => "/usr/share/perl5/Fasterq.pm",
+    source => "/home/vagrant/lib/Fasterq.pm";
 }
 
 exec {
