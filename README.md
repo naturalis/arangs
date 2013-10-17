@@ -7,6 +7,9 @@ Source code, data, documentation and reference materials
 Data
 ----
 * Data for exercises: https://drive.google.com/folderview?id=0B_8UW3JvZsgcNHo2V3JuY19sMlE&usp=sharing
+* direct download each file: (replace KEY with file-id in google url, e.g. 0B_8UW3JvZsgcQnd0QW5Uakt0M00 for 1-U0015717_GTGGCC_L005_R1_001-small.fastq):
+
+     `local> wget -O file_name http://drive.google.com/uc?id=<KEY>&e=download`
 
 Reference materials
 -------------------
