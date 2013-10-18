@@ -13,12 +13,23 @@ Data
 
 Reference materials
 -------------------
-* "A Quick Guide to Organizing Computational Biology Projects" http://dx.doi.org/10.1371/journal.pcbi.1000424
-* "A quick guide for developing effective bioinformatics programming skills." http://dx.doi.org/10.1371/journal.pcbi.1000589
-* "Advanced Bash-Scripting Guide" http://tldp.org/LDP/abs/html/
-* NGS glossary https://docs.google.com/spreadsheet/ccc?key=0Av8UW3JvZsgcdE9wZW1sYzlCQWFwNjBXLWMtQzZLN3c#gid=0
-* NGS platforms https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_CxCpd4
-* DNA Sequencing Technologies http://www.nature.com/scitable/topicpage/DNA-Sequencing-Technologies-690
+* DNA Sequencing Technologies 
+http://www.nature.com/scitable/topicpage/DNA-Sequencing-Technologies-690
+
+* "A Quick Guide to Organizing Computational Biology Projects" 
+http://dx.doi.org/10.1371/journal.pcbi.1000424
+
+* "A quick guide for developing effective bioinformatics programming skills." 
+http://dx.doi.org/10.1371/journal.pcbi.1000589
+
+* "A Practical Comparison of De Novo Genome Assembly Software Tools for Next-Generation Sequencing Technologies" 
+http://dx.doi.org/10.1371/journal.pone.0017915
+
+* NGS glossary spreadsheet
+https://docs.google.com/spreadsheet/ccc?key=0Av8UW3JvZsgcdE9wZW1sYzlCQWFwNjBXLWMtQzZLN3c#gid=0
+
+* NGS platforms 
+https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_CxCpd4
 
 Syntax Format Descriptions
 --------------------------
@@ -30,7 +41,7 @@ Syntax Format Descriptions
 Executables
 --------
 * samtools http://samtools.sourceforge.net/
-* BWA http://bio-bwa.sourceforge.net/
+* bwa http://bio-bwa.sourceforge.net/
 * fastqc http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 * picard http://picard.sourceforge.net/
 * vcftools http://vcftools.sourceforge.net/
@@ -65,6 +76,7 @@ Helper tools
 * python http://python.org/
 * ruby http://www.ruby-lang.org/en/
 * r http://www.r-project.org/
+* shell http://tldp.org/LDP/abs/html/
 
 Visual workflow tools
 ---------------------
