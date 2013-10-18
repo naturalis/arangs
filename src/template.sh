@@ -21,6 +21,12 @@ then
   exit 1
 fi
 
+date "+running on %Y-%m-%d at %H:%M:%S"
+
+# this might come in handy later on
+running_date=`date "+%Y-%m-%d_%H_%M_%S"`
+echo $running_date
+
 # do things with arg1 (and arg2, etc)
 # for each command that you run, check its exit status to make sure it ran ok
 if [ 0 != $? ]
