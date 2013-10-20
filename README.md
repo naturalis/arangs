@@ -98,6 +98,7 @@ vagrant/virtualbox
 ------------------
 * install virtualbox: https://www.virtualbox.org
 * install vagrant: http://www.vagrantup.com/
+* check out available vagrant boxes: http://www.vagrantbox.es
 * add the fedora 18 box to your vagrant boxes: 
 
     `local> vagrant box add fedora http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vbox4210.box`
