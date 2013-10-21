@@ -22,6 +22,9 @@ http://dx.doi.org/10.1371/journal.pcbi.1000424
 * "A quick guide for developing effective bioinformatics programming skills." 
 http://dx.doi.org/10.1371/journal.pcbi.1000589
 
+* "The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants"
+http://dx.doi.org/10.1093%2Fnar%2Fgkp1137
+
 * "A Practical Comparison of De Novo Genome Assembly Software Tools for Next-Generation Sequencing Technologies" 
 http://dx.doi.org/10.1371/journal.pone.0017915
 
