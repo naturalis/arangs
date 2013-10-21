@@ -1,0 +1,16 @@
+env
+env # look for SHELL
+echo $PATH
+env | grep PATH
+MYTEST=foo
+export MYTEST
+export MYTEST2=3
+ls -l $HOME # look for largest number
+mkdir $HOME/arangs
+mv arangs arangs13 # make sure arangs13 does not already exist, or it will create arangs13/arangs instead
+which perl
+ls -l
+touch /foo
+touch /foo 2> error.txt
+touch /foo 2>> error.txt
+find $HOME -type f -name \*.txt

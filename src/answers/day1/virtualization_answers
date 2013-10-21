@@ -1,0 +1,16 @@
+cd
+mkdir vagrant_test
+cd vagrant_test
+vagrant box list
+vagrant add box fedora /gsd/To_Participant/ARANGS13/fedora*box
+vagrant init fedora
+vagrant up
+vagrant ssh
+rpm -qa
+exit
+vagrant status
+vagrant halt
+vagrant status
+vagrant up
+vagrant status
+vagrant destroy --force
