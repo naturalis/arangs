@@ -1,0 +1,19 @@
+cd
+mkdir bwa_alignment
+cp /gsd/To_Participants/ARANGS13/ITAG2_3_genomic.fasta.gz .
+bwa index -a bwtsw ITAG2_3_genomic.fasta.gz .
+cp /gsd/To_Participants/ARANGS13/U0015717_GTGGCC_L005_R[12]_001.fastq.gz .
+bwa aln -t 8 ITAG2_3_genomic.fasta.gz U0015717_GTGGCC_L005_R1_001.fastq.gz > U0015717_GTGGCC_L005_R1_001.fastq.gz.sai
+bwa aln -t 8 ITAG2_3_genomic.fasta.gz U0015717_GTGGCC_L005_R1_002.fastq.gz > U0015717_GTGGCC_L005_R2_001.fastq.gz.sai
+bwa sampe ITAG2_3_genomic.fasta.gz U0015717_GTGGCC_L005_R1_001.fastq.gz.sai U0015717_GTGGCC_L005_R2_001.fastq.gz.sai U0015717_GTGGCC_L005_R1_001.fastq.gz U0015717_GTGGCC_L005_R2_001.fastq.gz > U0015717_GTGGCC_L005_001.sam
+samtools view -bS U0015717_GTGGCC_L005_001.sam > U0015717_GTGGCC_L005_001.bam
+samtools sort U0015717_GTGGCC_L005_001.bam U0015717_GTGGCC_L005_001.sorted
+ls U0015717_GTGGCC_L005_001.sorted.bam
+
+# or
+samtools view -bS U0015717_GTGGCC_L005_001.sam | samtools sort - U0015717_GTGGCC_L005_001
+ls U0015717_GTGGCC_L005_001.bam
+
+# or even better, create sorted bam directly from sampe output
+bwa sampe ITAG2_3_genomic.fasta.gz U0015717_GTGGCC_L005_R1_001.fastq.gz.sai U0015717_GTGGCC_L005_R2_001.fastq.gz.sai U0015717_GTGGCC_L005_R1_001.fastq.gz U0015717_GTGGCC_L005_R2_001.fastq.gz | samtools view -bS - | samtools sort - > U0015717_GTGGCC_L005_001
+ls U0015717_GTGGCC_L005_001.bam
