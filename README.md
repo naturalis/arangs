@@ -28,6 +28,9 @@ http://dx.doi.org/10.1093%2Fnar%2Fgkp1137
 * "A Practical Comparison of De Novo Genome Assembly Software Tools for Next-Generation Sequencing Technologies" 
 http://dx.doi.org/10.1371/journal.pone.0017915
 
+* "A beginner's guide to eukaryotic genome annotation"
+http://dx.doi.org/10.1038/nrg3174
+
 * NGS glossary spreadsheet
 https://docs.google.com/spreadsheet/ccc?key=0Av8UW3JvZsgcdE9wZW1sYzlCQWFwNjBXLWMtQzZLN3c#gid=0
 
