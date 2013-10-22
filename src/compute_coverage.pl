@@ -14,7 +14,10 @@ my $end        = 100_000;
 # here we create a Bio::DB::Sam object, which 
 # presents the contents of a BAM file as a 
 # database which we can navigate and query.
-my $sam = Bio::DB::Sam->new( -bam => $bamfile );
+my $sam = Bio::DB::Sam->new( 
+	-bam       => $bamfile,
+	-autoindex => 1,
+);
 
 # here we query the sam object to get the aligned
 # reads within our genomic region
