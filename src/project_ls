@@ -13,10 +13,12 @@ then
   echo "${project_name} directory does not exit" 1>&2
   exit 1
 fi
+cd $project_root
 
 top_folder=$2
 if [ -z $top_folder ]
-  echo "please choose a top folder from among data results bin" 1>&2
+then
+  echo "please choose a top folder from among bin src data results doc"  1>&2
   exit 1
 fi
 
@@ -27,7 +29,7 @@ then
   exit 1
 fi
 
-subfolder=$1
+subfolder=$3
 if [ -n $subfolder ]
 then
   ls_folder="${project_root}/${top_folder}/${subfolder}"
