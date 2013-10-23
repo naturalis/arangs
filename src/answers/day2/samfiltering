@@ -1,0 +1,11 @@
+samtools flagstat U0015717.bam
+
+samtools view -h U0015717.bam | perl src/filter_sam.pl -u | samtools -bS - | samtools sort - U0015717.unaligned
+samtools flagstat U0015717.unaligned.bam
+
+samtools view -h U0015717.bam | perl src/filter_sam.pl -a | samtools -bS - | samtools sort - U0015717.aligned
+samtools flagstat U0015717.aligned.bam
+
+samtools merge all_reads.bam U0015717.unaligned.bam U0015717.aligned.bam
+samtools flagstat all_reads.bam
+samtools flagstat U0015717.bam
