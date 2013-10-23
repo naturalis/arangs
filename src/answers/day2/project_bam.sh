@@ -1,13 +1,31 @@
 #!/bin/bash
 
-# set up our root directories, which anchor all other paths
-project_root="${HOME}/arangs"
-result_root="${project_root}/results"
-
 # usage string for use when arguments missing
-usage=$0" sam_file_name [original_run_date]"
+usage=$0" project_name sam_file_name [original_run_date]"
 
-sam_name=$1
+project_name=$1
+if [ -z $project_name ]
+then
+  echo $usage 1>&2
+  exit 1
+fi
+
+# set up our root directories, which anchor all other paths
+project_root="${HOME}/${project_name}"
+if [ ! -d $project_root ]
+then
+  echo "${project_root} directory does not exist!"
+  exit 1
+fi
+
+result_root="${project_root}/results"
+if [ ! -d $result_root ]
+then
+  echo "${project_root} does not appear to be in the right structure, it needs a results directory" 1>&2
+  exit 1
+fi
+
+sam_name=$2
 if [ -z $sam_name ]
 then
   echo $usage 1>&2
@@ -17,7 +35,7 @@ fi
 date_stamp=`date "+%Y-%m-%d"`
 this_result_dir="${result_root}/${date_stamp}"
 
-orig_run_date=$2
+orig_run_date=$3
 if [ -n $orig_run_date ]
 then
   this_result_dir="${result_root}/${orig_run_date}"
