@@ -1,0 +1,43 @@
+#!/bin/bash
+
+usage=$0.' project_name top_folder [sub_folder]'
+project_name=$1
+if [ -z $project_name ]
+then
+  echo $usage 1>&2
+  exit 1
+fi
+project_root="${HOME}/${project_name}"
+if [ ! -d $project_root ]
+then
+  echo "${project_name} directory does not exit" 1>&2
+  exit 1
+fi
+
+top_folder=$2
+if [ -z $top_folder ]
+  echo "please choose a top folder from among data results bin" 1>&2
+  exit 1
+fi
+
+ls_folder="${project_root}/${top_folder}"
+if [ ! -d ${ls_folder} ]
+then
+  echo "${top_folder} does not exist in ${project_name}" 1>&2
+  exit 1
+fi
+
+subfolder=$1
+if [ -n $subfolder ]
+then
+  ls_folder="${project_root}/${top_folder}/${subfolder}"
+fi
+
+if [ ! -d $ls_folder ]
+then
+  echo "${ls_folder} does not exist!" 1>&2
+  exit 1
+fi
+
+cd $ls_folder
+ls
