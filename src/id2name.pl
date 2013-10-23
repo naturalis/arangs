@@ -2,7 +2,11 @@
 use strict;
 use LWP::UserAgent;
 
-my $gene_id = shift @ARGV || 'Solyc01g005000.2';
+# this script accepts a gene ID as per the ITAG2.3 naming conventions
+# in their GFF3 and will produce the associated external gene name
+# (if it exists) by accessing BioMart. Gene ID's should be formatted
+# such as 'Solyc01g005000.2'
+my $gene_id = shift @ARGV || die "Usage: $0 <gene ID>\n";
 
 # this is a template that, given an EnsEMBL gene ID, returns the
 # gene name, if any
