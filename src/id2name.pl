@@ -6,7 +6,7 @@ use LWP::UserAgent;
 # in their GFF3 and will produce the associated external gene name
 # (if it exists) by accessing BioMart. Gene ID's should be formatted
 # such as 'Solyc01g005000.2'
-my $gene_id = shift @ARGV || die "Usage: $0 <gene ID>\n";
+my $gene_id = shift || die "Usage: $0 <gene ID>\n";
 
 # this is a template that, given an EnsEMBL gene ID, returns the
 # gene name, if any
